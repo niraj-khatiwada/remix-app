@@ -1,5 +1,5 @@
 function NoteDetail() {
-  return <div>Note Detail</div>;
+  return <div>NoteDetail</div>;
 }
 
 export default NoteDetail;

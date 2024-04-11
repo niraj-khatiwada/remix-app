@@ -1,5 +1,5 @@
 import { Form, useActionData, useNavigation } from "@remix-run/react";
-import { action } from "..";
+import { action } from "../route";
 
 function Note() {
   const actionData = useActionData<typeof action>();
