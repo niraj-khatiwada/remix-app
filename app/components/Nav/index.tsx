@@ -1,5 +1,5 @@
 function Nav() {
-  return <div>Nav</div>;
+  return <div className="bg-black text-white">Nav</div>;
 }
 
 export default Nav;

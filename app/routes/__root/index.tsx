@@ -1,4 +1,3 @@
-// We have __root pathless route above, so this won't be picked as /page.
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
