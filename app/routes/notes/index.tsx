@@ -1,4 +1,9 @@
-import { ActionFunctionArgs, redirect, json } from "@remix-run/node";
+import {
+  ActionFunctionArgs,
+  redirect,
+  json,
+  MetaFunction,
+} from "@remix-run/node";
 import { useLoaderData, useRouteError } from "@remix-run/react";
 
 import Note from "./Note";
@@ -69,5 +74,15 @@ export async function action({ request, params, context }: ActionFunctionArgs) {
 
   return redirect("/");
 }
+
+// Here "data" will be loader data
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  return [
+    {
+      title: data?.[0]?.title ?? "Remix",
+      description: "Hello notes.",
+    },
+  ];
+};
 
 export default Notes;

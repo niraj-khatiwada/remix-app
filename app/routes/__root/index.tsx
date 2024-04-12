@@ -1,13 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Remix Notes" },
-    { name: "description", content: "Welcome to Remix Notes!" },
-  ];
-};
-
 export default function Index() {
   return (
     <>
@@ -18,3 +11,10 @@ export default function Index() {
     </>
   );
 }
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Remix Notes" },
+    { name: "description", content: "Welcome to Remix Notes!" },
+  ];
+};
